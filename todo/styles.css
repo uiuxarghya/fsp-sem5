@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+}
+
+.container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-right: 10px; /* Space between input and button */
+}
+
+button {
+  flex-shrink: 0;
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+}
+
+ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f7f8fc;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+li:hover {
+  background: #e6f7e6;
+  transform: translateY(-2px);
+}
+
+li.completed {
+  text-decoration: line-through;
+  background: #d3f0d3;
+  color: #888;
+}
+
+button.edit {
+  background: #007BFF;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.edit:hover {
+  background-color: #0056b3;
+}
+
+button.delete {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.delete:hover {
+  background-color: #d93636;
+}
+
+li span.task-text {
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
